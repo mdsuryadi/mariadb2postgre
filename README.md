@@ -1,7 +1,9 @@
 ## mariadb2postgre
 
 >Install Python Environtment
-```apt install python3-venv```
+```
+apt install python3-venv
+```
 
 > Create Environtment
 ```
