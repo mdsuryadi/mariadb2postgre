@@ -40,6 +40,7 @@ while IFS= read -r -d '' file; do
         -U "$DB_USER" \
         -d "$DB_NAME" \
         -v ON_ERROR_STOP=1 \
+        -c "SET search_path = eems;" \
         -f "$file"
 
 done
