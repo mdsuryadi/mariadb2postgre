@@ -29,6 +29,7 @@ find "$BASE_DIR/04_data" \
     -type f \
     -name "*.sql" \
     -print0 |
+    sort -z |
 while IFS= read -r -d '' file; do
 
     echo "Importing: $file"
