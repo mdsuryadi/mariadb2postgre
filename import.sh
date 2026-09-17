@@ -19,6 +19,7 @@ psql \
     -p "$DB_PORT" \
     -U "$DB_USER" \
     -d "$DB_NAME" \
+    -c "SET search_path = bb_useradmin;" \
     -v ON_ERROR_STOP=1 \
     -f "$BASE_DIR/01_schema.sql"
 
