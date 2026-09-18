@@ -297,15 +297,15 @@ def convert_type(
     # --------------------------------------------------------
     # BOOLEAN
     # --------------------------------------------------------
+    # bagian dibawah ini di remarks karena menjadikan tinyint(1) -> boolean
+    ##if base == "tinyint":
 
-    if base == "tinyint":
+        ##size = extract_parentheses(
+            ##column_type
+        ##)
 
-        size = extract_parentheses(
-            column_type
-        )
-
-        if size == "1":
-            return "BOOLEAN", None
+        ##if size == "1":
+            ##return "BOOLEAN", None
 
     # --------------------------------------------------------
     # ENUM
